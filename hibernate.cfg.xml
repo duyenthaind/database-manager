@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/qlbanhang?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name = "show_sql">true</property>
+		<!-- <property name="hibernate.connection.password"></property>-->
+
+		<!--  <property name="connection.driver_class">com.mysql.jdbc.Driver</property> -->
+		
+		<mapping class="com.test.hibernate.entities.DonDh"/>
+		<mapping class="com.test.hibernate.entities.ChiTietDonHang"/>
+		<mapping class="com.test.hibernate.entities.ChiTietPhieuNhap"/>
+		<mapping class="com.test.hibernate.entities.ChiTietPhieuXuat"/>
+		<mapping class="com.test.hibernate.entities.NhaCungCap"/>
+		<mapping class="com.test.hibernate.entities.PhieuNhap"/>
+		<mapping class="com.test.hibernate.entities.PhieuXuat"/>
+		<mapping class="com.test.hibernate.entities.TonKho"/>
+		<mapping class="com.test.hibernate.entities.VatTu"/>
+	</session-factory>
+</hibernate-configuration>
